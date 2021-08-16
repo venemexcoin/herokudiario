@@ -17,3 +17,4 @@
 
 -   Creamos el archivo Procfile para enrrutar a heroku
 -   Commit para guardar la documentación
+-   compilar app.css y app.js con [npm rum production]
