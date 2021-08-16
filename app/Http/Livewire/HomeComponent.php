@@ -6,6 +6,9 @@ use Livewire\Component;
 
 class HomeComponent extends Component
 {
+
+    public $email;
+
     public function render()
     {
         return view('livewire.home-component')->layout('layouts.base');
