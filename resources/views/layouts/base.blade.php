@@ -72,7 +72,7 @@
 									@endif
 								@else  
 									<li><a href="{{route('login')}}" class="button primary">Login</a></li>
-									{{-- <li><a href="{{route('register')}}" class="button primary">Register</a></li> --}}
+									<li><a href="{{route('register')}}" class="button primary">Register</a></li>
 									
 								@endif
 							@endif
