@@ -19,3 +19,5 @@
 -   Commit para guardar la documentación
 -   compilar app.css y app.js con [npm rum production]
 -   configuración de los APP_KEY [config:set APP_KET=...]
+-   En este proyecto cambiamos o agregamos [fakerphp/faker] como practica para usarlo en heroku
+-   Configuración de la base de datos en heroku tomando los datos de .env
