@@ -21,3 +21,5 @@
 -   configuración de los APP_KEY [config:set APP_KET=...]
 -   En este proyecto cambiamos o agregamos [fakerphp/faker] como practica para usarlo en heroku
 -   Configuración de la base de datos en heroku tomando los datos de .env
+-   cracion de base de datos de correo del formulario
+-   creando Rutas de Roles y usuarios

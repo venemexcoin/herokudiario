@@ -156,10 +156,14 @@
             <h2>Termino Nuestro primer recorrido</h2>
             <p>Si estas interesado en mi trabajo envíame tu correo y me comunicare con usted gracias. </p>
         </header>
-        <form method="post" action="#" class="cta">
+            @if (Session::has('message'))
+                <div class="alert alert-succes" role="alert">{{Session::get('message')}}</div>
+            @endif
+        <form method="post" action="#" class="cta" wire:submit.prevent="sentdEmail">
             <div class="row gtr-uniform gtr-50" id="formImail">
-                <div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-                <div class="col-4 col-12-xsmall"><input type="button" value="Get Started" class="fit primary" /></div>
+                <div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" wire:model="email" /></div>
+                <div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
+                @error('email') <p class="text-danger">{{$message}}</p> @enderror
             </div>
         </form>
     </div>

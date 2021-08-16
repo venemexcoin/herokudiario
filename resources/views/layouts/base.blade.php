@@ -42,8 +42,40 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							@if(Route::has('login'))
+								@auth
+									@if(Auth::user()->utype === 'ADM')
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a title="My Account" href="#">My Account {{Auth::user()->name}}</a></li>
+											<li><a title="Dashboard" href="{{route('admin.dashboard')}}">Dashboard</a></li>
+											<li><a href="{{'logout'}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+											<form id="logout-form" method="POST" action="{{route('logout')}}">
+												@csrf
+												
+											</form>
+										</ul>
+									</li>    
+									@else
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a title="My Account" href="#">My Account {{Auth::user()->name}}</a></li>
+											<li><a title="Dashboard" href="{{route('user.dashboard')}}">Dashboard</a></li>
+											<li><a href="{{'logout'}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+											<form id="logout-form" method="POST" action="{{route('logout')}}">
+												@csrf
+											</form>
+										</ul>
+									</li>  	 
+									@endif
+								@else  
+									<li><a href="{{route('login')}}" class="button primary">Login</a></li>
+									{{-- <li><a href="{{route('register')}}" class="button primary">Register</a></li> --}}
+									
+								@endif
+							@endif
 						</ul>
 					</nav>
 				</header>
