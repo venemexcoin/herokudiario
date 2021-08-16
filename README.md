@@ -1,6 +1,6 @@
 ## Documentacion desde el dia 1 del proyecto el 14/08/2021
 
-1* Instaslacionde paque laravel
+1* Instaslacion de paquete laravel
 2* Instalacion de paquete composer require livewire/livewire
 3* creacion de la base de datos.
 4* crando los layouts
