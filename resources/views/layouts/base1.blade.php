@@ -28,8 +28,8 @@
 							 <li class="menu_admin">
 								<a href="#">Layouts</a>
 								<ul>
-									<li><a href="#veremos">Que veremos aquí</a></li>
-									<li><a href="{{route('general.uno')}}">paginas Completas</a></li>
+									<li><a href="/">Mi espacio</a></li>
+									<li><a href="{{route('general.uno')}}">Right Sidebar</a></li>
 									<li><a href="no-sidebar.html">No Sidebar</a></li>
 									<li>
 										<a href="#">Submenu</a>
@@ -118,20 +118,6 @@
 
 			{{$slot}}
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://twitter.com/chamocelldevel1" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/alfonso.berroteran.3" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/eduardo-liendo-152243120/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.instagram.com/chamocelldeveloper/?hl=es-la" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/venemexcoin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#formImail" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Intitulado. Reservados todos los derechos.</li><li>Design: <a href="https://herokuproy1.herokuapp.com/">Mi Perfil</a></li>
-					</ul>
-				</footer>
 
 		</div>
 

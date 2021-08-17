@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\HomeComponent;
 
+use App\Http\Livewire\General\UserMenuUnoComponent;
+
 use App\Http\Livewire\User\UserDashboardComponent;
 
 use App\Http\Livewire\Admin\AdminDashboardComponent;
@@ -31,6 +33,9 @@ use App\Http\Livewire\Admin\AdminDashboardComponent;
 //     return view('dashboard');
 // })->name('dashboard');
 
+
+//Uso general
+Route::get('/general/menuuno',UserMenuUnoComponent::class)->name('general.uno');
 
 // For User or Customer 
 

@@ -103,7 +103,7 @@
 <!-- Four -->
 <section id="four" class="wrapper style1 special fade-up">
     <div class="container">
-        <header class="major">
+        <header class="major" id="veremos">
             <h2>Que veremos aqui</h2>
             <p>Alguna de las tecnologías que manejo en mi día a día</p>
         </header>
