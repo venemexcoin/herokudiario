@@ -48,7 +48,7 @@
 									<li class="menu_admin">
 										<a href="#">Menu Administrador</a>
 										<ul>
-											<li><a href="left-sidebar.html">Left Sidebar</a></li>
+											<li><a href="{{route('admin.completa')}}">Paginas completas</a></li>
 											<li><a href="right-sidebar.html">Right Sidebar</a></li>
 											<li><a href="no-sidebar.html">No Sidebar</a></li>
 											<li>

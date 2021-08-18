@@ -1,3 +1,7 @@
+@push('title_base')
+    paginas completas
+@endpush
+
 <div>
 
     <style>
@@ -171,7 +175,7 @@
         }
     </style>
         <div class="conten_title">
-            <h1>paginas completas</h1>
+            <h1>Paginas completas</h1>
         </div>
 
     <div class="container">
