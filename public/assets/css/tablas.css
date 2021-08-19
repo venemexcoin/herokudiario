@@ -1,0 +1,64 @@
+.content {
+    position: relative;
+    ;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.2em;
+
+}
+
+.fa {
+    margin-left: 15px;
+}
+
+.fa-pencil {
+    color: rgb(15, 247, 15);
+}
+
+.fa-trash {
+    color: rgb(255, 12, 12);
+}
+
+a {
+    border-bottom: none;
+}
+
+@media (max-width: 30em) {
+    table {
+        width: 100%;
+        font-size: .9em;
+    }
+
+    table tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid grey;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table td[data-title] {
+        display: flex;
+    }
+
+    table td[data-title]::before {
+        content: attr(data-title);
+        width: 80px;
+        color: silver;
+        font-weight: bold;
+    }
+
+    table td,
+    table th {
+        border: none !important;
+    }
+
+    .panel-default {
+        max-width: 98%;
+        margin-left: 3px;
+    }
+}

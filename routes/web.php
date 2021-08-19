@@ -3,15 +3,18 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\HomeComponent;
-use App\Http\Livewire\BotonNeonComponent;
 
 use App\Http\Livewire\General\UserMenuUnoComponent;
+use App\Http\Livewire\General\PagComplit\SlitVideoComponent;
+use App\Http\Livewire\General\PagComplit\ScrollmagicComponent;
+use App\Http\Livewire\General\PagComplit\ParallaxComponent;
 
 use App\Http\Livewire\User\UserDashboardComponent;
 
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminCompletaComponent;
 use App\Http\Livewire\Admin\AdminAddCompletaComponent;
+use App\Http\Livewire\Admin\AdminEditCompletaComponent;
 
 
 
@@ -31,7 +34,7 @@ use App\Http\Livewire\Admin\AdminAddCompletaComponent;
 // });
 
    Route::get('/',HomeComponent::class)->name('index');
-   Route::get('boton-neon',BotonNeonComponent::class)->name('boton-neon');
+   
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
@@ -40,6 +43,9 @@ use App\Http\Livewire\Admin\AdminAddCompletaComponent;
 
 //Uso general
 Route::get('/general/menuuno',UserMenuUnoComponent::class)->name('general.uno');
+Route::get('/general/slitvideo',SlitVideoComponent::class)->name('general.slitvideo');
+Route::get('/general/scrollmagic',ScrollmagicComponent::class)->name('general.scrollmagic');
+Route::get('/general/parallax', ParallaxComponent::class)->name('general.parallax');
 
 // For User or Customer 
 
@@ -54,4 +60,5 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
     Route::get('/admin/completa/add', AdminAddCompletaComponent::class)->name('admin.addcompleta');
     Route::get('/admin/completa', AdminCompletaComponent::class)->name('admin.completa');
+    Route::get('/admin/completa/edit/{complit_id}', AdminEditCompletaComponent::class)->name('admin.editcompleta');
 });

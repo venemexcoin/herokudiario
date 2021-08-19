@@ -1,62 +1,11 @@
-<div>
-    <style>
-        .content {
-            position: relative;;
-            justify-content: center;
-            align-items: center;
-            padding: 0 1.2em;
+@push('title_base')
+    Lista de paginas
+@endpush
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('assets/css/tablas.css') }}">
+@endpush
 
-        }
-        .fa{
-            margin-left: 15px;  
-        }
-        .fa-pencil {
-            color: rgb(15, 247, 15);
-        }
-        .fa-trash {
-            color: rgb(255, 12, 12);
-        }
-        a {
-            border-bottom: none;
-        }
-        @media (max-width: 30em) 
-        {
-            table {
-                width: 100%;
-                font-size: .9em;
-            }
-            table tr {
-                display: flex;
-                flex-direction: column;
-                border: 1px solid grey;
-                padding: 1em;
-                margin-bottom: 1em; 
-            }
-            table thead {
-                display: none;
-            }
-            table td[data-title] {
-                display: flex;
-            }
-            table td[data-title]::before {
-                content: attr(data-title);
-                width: 80px;
-                color: silver;
-                font-weight: bold; 
-            }
-            table td,
-            table th  
-            {
-                border: none !important;
-            }
-            
-            .panel-default 
-            {
-                max-width: 98%;
-                margin-left: 3px;
-            }
-        }
-    </style>
+<div>
     <div id="main" class="wrapper style1">
         <div class="container">
             <header class="major">
@@ -65,68 +14,51 @@
             </header>
 
             <!-- Content -->
-                <section id="content">
-                    @livewire('boton-neon-component')
-                    <div class="content">
+            <section id="content">
+                <x-botonNeon>
+                    /admin/completa/add
+                </x-botonNeon>
+                <div class="content">
                     <table>
                         <thead>
-                        <tr>
-                            <th>id</th>
-                            <th>Route Img</th>
-                            <th>Nomre</th>
-                            <th>Route Pag.</th>
-                            <th>Widget1</th>
-                            <th>Widget2</th>
-                            <th>Widget3</th>
-                            <th>action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-title="id">1</td>
-                            <td data-title="Imagen"><img src="{{asset('assets/images/img/1.jpg')}}" width="50" alt="" ></td>
-                            <td data-title="Nombre">Slit Video</td>
-                            <td data-title="Ruta">admin.completa</td>
-                            <td data-title="widget1">Lorem ipsum dolor sit</td>
-                            <td data-title="widget2">Lorem ipsum dolor sit</td>
-                            <td data-title="widget2">Lorem ipsum dolor sit</td>
-                            <td>
-                               <a class="btn"href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> 
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td data-title="id">2</td>
-                            <td data-title="Imagen"><img src="{{asset('assets/images/img/1.jpg')}}" width="50" alt="" ></td>
-                            <td data-title="Nombre">Slit Video</td>
-                            <td data-title="Ruta">admin.completa</td>
-                            <td data-title="widget1">Lorem ipsum dolor sit</td>
-                            <td data-title="widget2">Lorem ipsum dolor sit</td>
-                            <td data-title="widget3">Lorem ipsum dolor sit</td>
-                            <td>
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> 
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td data-title="id">3</td>
-                            <td data-title="Imagen"><img src="{{asset('assets/images/img/1.jpg')}}" width="50" alt="" ></td>
-                            <td data-title="Nombre">Slit Video</td>
-                            <td data-title="Ruta">admin.completa</td>
-                            <td data-title="widget1">Lorem ipsum dolor sit</td>
-                            <td data-title="widget2">Lorem ipsum dolor sit</td>
-                            <td data-title="widget3">Lorem ipsum dolor sit</td>
-                            <td data-title="Star">
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> 
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </td>
-                        </tr>
-                    <tbody>
+                            <tr>
+                                <th>id</th>
+                                <th>Route Img</th>
+                                <th>Nomre</th>
+                                <th>Route Pag.</th>
+                                <th>Widget1</th>
+                                <th>Widget2</th>
+                                <th>Widget3</th>
+                                <th>action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($complits as $complit)
+                                <tr>
+                                    <td data-title="id">{{ $complit->id }}</td>
+                                    <td data-title="Imagen"><img src="{{ $complit->rutaimg }}" width="50" alt=""></td>
+                                    <td data-title="Nombre">{{ $complit->name }}</td>
+                                    <td data-title="Ruta">{{ $complit->rutapag }}</td>
+                                    <td data-title="widget1">{{ $complit->widget1 }}</td>
+                                    <td data-title="widget2">{{ $complit->widget2 }}</td>
+                                    <td data-title="widget2">{{ $complit->widget3 }}</td>
+                                    <td>
+                                        <a class="btn"
+                                            href="{{ route('admin.editcompleta', ['complit_id' => $complit->id]) }}"><i
+                                                class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        <a href="#"
+                                            onclick="confirm('Are you sure, Yor want to delete this Complit Page?') || event.stopImmediatePropagation()"
+                                            style="margin-left: 10px;"
+                                            wire:click.prevent="deleteComplit({{ $complit->id }})""><i class=" fa
+                                            fa-trash" aria-hidden="true"></i></a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        <tbody>
                     </table>
+                    {{ $complits->links() }}
                 </div>
-                </section>
+            </section>
 
         </div>
     </div>
