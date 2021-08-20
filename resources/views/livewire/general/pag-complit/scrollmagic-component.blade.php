@@ -70,6 +70,36 @@
             font-size: 1.2em;
         }
 
+        @media screen and (max-width:900px) {
+            .bg {
+                background-image: url(https://i.postimg.cc/HLYLLC4B/paisaje-Agua.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+
+            .bg h2 {
+                position: relative;
+                color: rgb(133, 131, 131);
+                font-size: 2em;
+            }
+
+        }
+
+        @media screen and (max-width:480px) {
+            .bg {
+                background-image: url(https://i.postimg.cc/HLYLLC4B/paisaje-Agua.jpg);
+                background-size: 600px 100%;
+            }
+
+            .bg h2 {
+                position: relative;
+                color: rgb(133, 131, 131);
+                font-size: 1.8em;
+            }
+
+
+        }
+
     </style>
 
 @endpush

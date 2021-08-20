@@ -92,6 +92,45 @@
             align-items: center;
         }
 
+        @media screen and (max-width:900px) {
+            .parallax-completo {
+                background-image: url(https://i.postimg.cc/h43YwVt2/equipo.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+
+            }
+
+            .parallax-chico {
+                background-image: url(https://i.postimg.cc/5tqqVWqx/equipo2.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+
+            .texto-hero {
+
+                opacity: 0.6;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            h2 {
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            .parallax-completo {
+                background-image: url(https://i.postimg.cc/h43YwVt2/equipo.jpg);
+                background-size: 400px 400px;
+                background-repeat: no-repeat;
+            }
+
+            .parallax-chico {
+                background-image: url(https://i.postimg.cc/5tqqVWqx/equipo2.jpg);
+                background-size: 400px 400px;
+                background-repeat: no-repeat;
+            }
+        }
+
     </style>
 @endpush
 <div>
