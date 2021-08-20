@@ -44,6 +44,14 @@
             margin-top: 50px;
         }
 
+        .sub_title h3 {
+            display: block;
+            color: #333;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
         .container {
             position: relative;
             width: 900px;
@@ -197,17 +205,24 @@
             font-weight: bold;
         }
 
-        nav svg {
-            height: 20px;
+        .paginate {
+            padding-bottom: 30px;
+
         }
 
-        nav .hidden {
-            display: block !important;
+        .paginate .relative {
+            color: #333;
+            font-weight: bold;
+            margin-left: 10px;
+            border-bottom: none;
         }
 
     </style>
     <div class="conten_title">
         <h1>Paginas completas</h1>
+    </div>
+    <div class="sub_title">
+        <h3>Algunas de estas pruebas no son responsive o adaptables para Móvil</h3>
     </div>
 
     <div class="container">
@@ -273,6 +288,8 @@
             </div>
         @endforeach
     </div>
-    {{ $completas->links() }}
+    <div class="paginate">
+        {{ $completas->links() }}
+    </div>
 
 </div>

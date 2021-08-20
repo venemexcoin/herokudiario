@@ -21,7 +21,7 @@ class AdminCompletaComponent extends Component
 
     public function render()
     {
-        $complits = PaginasCompletas::paginate(3);
+        $complits = PaginasCompletas::simplepaginate(3);
         return view('livewire.admin.admin-completa-component',['complits' => $complits])->layout('layouts.base');
     }
 }

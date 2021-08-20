@@ -23,3 +23,11 @@
 -   Configuración de la base de datos en heroku tomando los datos de .env
 -   cracion de base de datos de correo del formulario
 -   creando Rutas de Roles y usuarios
+
+## Targeta de presentacion Glossmorphism Card Hover
+
+-   usamos iconos de fontawesome (https://fontawesome.com/v5.15/icons?d=gallery&p=2) y el cdn
+-   (<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />) \*por si despues me pierdo
+-   use simplepage y modifique los balores en Glassmorphism

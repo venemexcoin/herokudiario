@@ -11,7 +11,7 @@ class UserMenuUnoComponent extends Component
 
     public function render()
     {
-        $completas = PaginasCompletas::paginate(3);
+        $completas = PaginasCompletas::simplepaginate(3);
         return view('livewire.general.user-menu-uno-component',['completas' => $completas])->layout('layouts.base1');
     }
 }

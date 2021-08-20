@@ -8,6 +8,7 @@ use App\Http\Livewire\General\UserMenuUnoComponent;
 use App\Http\Livewire\General\PagComplit\SlitVideoComponent;
 use App\Http\Livewire\General\PagComplit\ScrollmagicComponent;
 use App\Http\Livewire\General\PagComplit\ParallaxComponent;
+use App\Http\Livewire\General\PagComplit\CardHoverComponent;
 
 use App\Http\Livewire\User\UserDashboardComponent;
 
@@ -46,6 +47,7 @@ Route::get('/general/menuuno',UserMenuUnoComponent::class)->name('general.uno');
 Route::get('/general/slitvideo',SlitVideoComponent::class)->name('general.slitvideo');
 Route::get('/general/scrollmagic',ScrollmagicComponent::class)->name('general.scrollmagic');
 Route::get('/general/parallax', ParallaxComponent::class)->name('general.parallax');
+Route::get('/general/cardhover', CardHoverComponent::class)->name('general.cardhover');
 
 // For User or Customer 
 
