@@ -69,6 +69,6 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/completa', AdminCompletaComponent::class)->name('admin.completa');
     Route::get('/admin/completa/edit/{complit_id}', AdminEditCompletaComponent::class)->name('admin.editcompleta');
 
-    Route::get('/prueba/home', HomePruebaComponent::class)->name('prueba.home')->name('prueba.home');
+    Route::get('/prueba/home', HomePruebaComponent::class)->name('prueba.home');
     Route::get('/prueba/progresobar', BarraProgresoComponent::class)->name('prueba.progresobar');
 });
