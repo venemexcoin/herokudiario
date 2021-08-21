@@ -13,17 +13,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daraz by TEMPLATE STOCK</title>
 
-    <link rel="stylesheet" href="{{ asset('assets/darraz/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/darraz/css/font-awesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/darraz/css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('assets/darraz/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('assets/darraz/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('assets/darraz/css/animate.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets/darraz/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('assets/darraz/css/style.css') }}" />
 
-    <script type="text/javascript" src="{{ asset('assets/darraz/js/jquery-1.11.2.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/darraz/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('assets/darraz/js/jquery-1.11.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('assets/darraz/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
-    <script type="text/javascript" src="{{ asset('assets/darraz/js/plugins.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('assets/darraz/js/plugins.js') }}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -145,17 +145,17 @@
 
                 <script type="text/javascript">
                     var dataHeader = [{
-                                bigImage: "{{ asset('assets/darraz/images/slide-1.jpg') }}",
+                                bigImage: "{{ secure_asset('assets/darraz/images/slide-1.jpg') }}",
                                 title: "Minimal & Clean",
                                 author: "Templatestock"
                             },
                             {
-                                bigImage: "{{ asset('assets/darraz/images/slide-2.jpg') }}",
+                                bigImage: "{{ secure_asset('assets/darraz/images/slide-2.jpg') }}",
                                 title: "I'm A Creative Theme",
                                 author: "Templatestock"
                             },
                             {
-                                bigImage: "{{ asset('assets/darraz/images/slide-3.jpg') }}",
+                                bigImage: "{{ secure_asset('assets/darraz/images/slide-3.jpg') }}",
                                 title: "Achieve Success",
                                 author: "Templatestock"
                             }
@@ -187,7 +187,8 @@
                 <div class="row table-row">
                     <div class="col-sm-6 hidden-xs">
                         <div class="section-content">
-                            <div class="big-image" style="background-image:url(images/1.png)"></div>
+                            <div class="big-image" style="background-image:url(https://i.postimg.cc/qR2qrB1B/1.jpg)">
+                            </div>
                         </div>
                     </div>
 
@@ -254,49 +255,49 @@
                         <script type="text/javascript">
                             var portfolio = [{
                                     category: "branding",
-                                    image: "{{ asset('assets/darraz/images/p-1.png') }}",
+                                    image: "{{ secure_asset('assets/darraz/images/p-1.png') }}",
                                     title: "Charming <span>Roxy</span>",
                                     link: "#none",
                                     text: "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
                                 },
                                 {
                                     category: "graphic",
-                                    image: "{{ asset('assets/darraz/images/p-2.png') }}",
+                                    image: "{{ secure_asset('assets/darraz/images/p-2.png') }}",
                                     title: "Fresh <span>Bubba</span>",
                                     link: "#none",
                                     text: "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
                                 },
                                 {
                                     category: "graphic",
-                                    image: "{{ asset('assets/darraz/images/p-3.png') }}",
+                                    image: "{{ secure_asset('assets/darraz/images/p-3.png') }}",
                                     title: "Wild <span>Romeo</span>",
                                     link: "#none",
                                     text: "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
                                 },
                                 {
                                     category: "video",
-                                    image: "{{ asset('assets/darraz/images/p-4.png') }}",
+                                    image: "{{ secure_asset('assets/darraz/images/p-4.png') }}",
                                     title: "Strange <span>Dexter</span>",
                                     link: "#none",
                                     text: "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
                                 },
                                 {
                                     category: "branding",
-                                    image: "{{ asset('assets/darraz/images/p-5.png') }}",
+                                    image: "{{ secure_asset('assets/darraz/images/p-5.png') }}",
                                     title: "Free <span>Sarah</span>",
                                     link: "#none",
                                     text: "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
                                 },
                                 {
                                     category: "printing",
-                                    image: "{{ asset('assets/darraz/images/p-6.png') }}",
+                                    image: "{{ secure_asset('assets/darraz/images/p-6.png') }}",
                                     title: "Chico <span>Silly</span>",
                                     link: "#none",
                                     text: "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
                                 },
                                 {
                                     category: "printing",
-                                    image: "{{ asset('assets/darraz/images/p-7.png') }}",
+                                    image: "{{ secure_asset('assets/darraz/images/p-7.png') }}",
                                     title: "IG <span>Shop</span>",
                                     link: "#none",
                                     text: "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
@@ -330,7 +331,8 @@
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="wrap animated" data-animate="fadeInDown">
                             <div class="img-team">
-                                <img src="{{ asset('assets/darraz/images/team-1.png') }}" alt="" class="img-circle">
+                                <img src="{{ secure_asset('assets/darraz/images/team-1.png') }}" alt=""
+                                    class="img-circle">
                             </div>
 
                             <h3>John Doe</h3>
@@ -353,7 +355,8 @@
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="wrap animated" data-animate="fadeInDown">
                             <div class="img-team">
-                                <img src="{{ asset('assets/darraz/images/team-2.png') }}" alt="" class="img-circle">
+                                <img src="{{ secure_asset('assets/darraz/images/team-2.png') }}" alt=""
+                                    class="img-circle">
                             </div>
 
                             <h3>Ellie Morgan</h3>
@@ -376,7 +379,8 @@
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="wrap animated" data-animate="fadeInDown">
                             <div class="img-team">
-                                <img src="{{ asset('assets/darraz/images/team-3.png') }}" alt="" class="img-circle">
+                                <img src="{{ secure_asset('assets/darraz/images/team-3.png') }}" alt=""
+                                    class="img-circle">
                             </div>
 
                             <h3>Elche</h3>
@@ -399,7 +403,8 @@
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="wrap animated" data-animate="fadeInDown">
                             <div class="img-team">
-                                <img src="{{ asset('assets/darraz/images/team-4.png') }}" alt="" class="img-circle">
+                                <img src="{{ secure_asset('assets/darraz/images/team-4.png') }}" alt=""
+                                    class="img-circle">
                             </div>
 
                             <h3>JF Thiago</h3>
@@ -541,7 +546,7 @@
     </div><!-- /.container-fluid -->
 
     <!-- SCRIPT -->
-    <script type="text/javascript" src="{{ asset('assets/darraz/js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('assets/darraz/js/main.js') }}"></script>
 </body>
 
 </html>
