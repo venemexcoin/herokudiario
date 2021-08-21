@@ -10,10 +10,10 @@
     <title>@stack('title_base')</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/developer-1.ico') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{secure_asset('assets/images/developer-1.ico') }}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/main.css') }}" />
     <noscript>
-        <link rel="stylesheet" href="{{ asset('assets/css/noscript.css') }}" />
+        <link rel="stylesheet" href="{{secure_asset('assets/css/noscript.css') }}" />
     </noscript>
     @stack('styles')
     @livewireStyles
@@ -53,7 +53,7 @@
                                     <a href="#">Menu Administrador</a>
                                     <ul>
                                         <li><a href="{{ route('admin.completa') }}">Paginas completas</a></li>
-                                        <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                        <li><a href="{{ route('prueba.home') }}">Zona de pruebas</a></li>
                                         <li><a href="no-sidebar.html">No Sidebar</a></li>
                                         <li>
                                             <a href="#">Submenu</a>
@@ -150,14 +150,14 @@
         </div>
 
         <!-- Scripts -->
-        <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.dropotron.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.scrollex.min.js') }}"></script>
-        <script src="{{ asset('assets/js/browser.min.js') }}"></script>
-        <script src="{{ asset('assets/js/breakpoints.min.js') }}"></script>
-        <script src="{{ asset('assets/js/util.js') }}"></script>
-        <script src="{{ asset('assets/js/main.js') }}"></script>
+        <script src="{{secure_asset('assets/js/jquery.min.js') }}"></script>
+        <script src="{{secure_asset('assets/js/jquery.scrolly.min.js') }}"></script>
+        <script src="{{secure_asset('assets/js/jquery.dropotron.min.js') }}"></script>
+        <script src="{{secure_asset('assets/js/jquery.scrollex.min.js') }}"></script>
+        <script src="{{secure_asset('assets/js/browser.min.js') }}"></script>
+        <script src="{{secure_asset('assets/js/breakpoints.min.js') }}"></script>
+        <script src="{{secure_asset('assets/js/util.js') }}"></script>
+        <script src="{{secure_asset('assets/js/main.js') }}"></script>
         <script src="https://kit.fontawesome.com/3226d1ef96.js" crossorigin="anonymous"></script>
         @stack('scripts')
         @livewireScripts

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/developer-1.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ secure_asset('assets/images/developer-1.ico') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,11 +11,7 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" />
     <title>@stack('title_base')</title>
-
-
-
     @livewireStyles
-
     @stack('styles')
 </head>
 

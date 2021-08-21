@@ -10,12 +10,16 @@ use App\Http\Livewire\General\PagComplit\ScrollmagicComponent;
 use App\Http\Livewire\General\PagComplit\ParallaxComponent;
 use App\Http\Livewire\General\PagComplit\CardHoverComponent;
 
+
 use App\Http\Livewire\User\UserDashboardComponent;
 
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminCompletaComponent;
 use App\Http\Livewire\Admin\AdminAddCompletaComponent;
 use App\Http\Livewire\Admin\AdminEditCompletaComponent;
+
+use App\Http\Livewire\Prueba\HomePruebaComponent;
+use App\Http\Livewire\Prueba\BarraProgresoComponent;
 
 
 
@@ -49,6 +53,7 @@ Route::get('/general/scrollmagic',ScrollmagicComponent::class)->name('general.sc
 Route::get('/general/parallax', ParallaxComponent::class)->name('general.parallax');
 Route::get('/general/cardhover', CardHoverComponent::class)->name('general.cardhover');
 
+
 // For User or Customer 
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
@@ -63,4 +68,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/completa/add', AdminAddCompletaComponent::class)->name('admin.addcompleta');
     Route::get('/admin/completa', AdminCompletaComponent::class)->name('admin.completa');
     Route::get('/admin/completa/edit/{complit_id}', AdminEditCompletaComponent::class)->name('admin.editcompleta');
+
+    Route::get('/prueba/home', HomePruebaComponent::class)->name('prueba.home')->name('prueba.home');
+    Route::get('/prueba/progresobar', BarraProgresoComponent::class)->name('prueba.progresobar');
 });
