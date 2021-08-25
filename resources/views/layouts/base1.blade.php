@@ -10,7 +10,7 @@
     <title>@stack('title_base')</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/developer-1.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/dVgqFj1c/417x498-black-text.png">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
     <noscript>
         <link rel="stylesheet" href="{{ asset('assets/css/noscript.css') }}" />
