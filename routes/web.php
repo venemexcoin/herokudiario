@@ -10,6 +10,7 @@ use App\Http\Livewire\General\PagComplit\ScrollmagicComponent;
 use App\Http\Livewire\General\PagComplit\ParallaxComponent;
 use App\Http\Livewire\General\PagComplit\CardHoverComponent;
 use App\Http\Livewire\General\PagComplit\CharacterlimitComponent;
+use App\Http\Livewire\General\PagComplit\CreativeMenuComponent;
 
 
 
@@ -56,7 +57,8 @@ Route::get('/general/scrollmagic',ScrollmagicComponent::class)->name('general.sc
 Route::get('/general/parallax', ParallaxComponent::class)->name('general.parallax');
 Route::get('/general/cardhover', CardHoverComponent::class)->name('general.cardhover');
 Route::get('/prueba/apicripto', ApiCriptoComponent::class)->name('prueba.apicripto');
-Route::get('/prueba/character',CharacterlimitComponent::class)->name('prueba.character');
+Route::get('/general/character',CharacterlimitComponent::class)->name('general.character');
+Route::get('/general/creativemenu',CreativeMenuComponent::class)->name('general.creativemenu');
 
 
 // For User or Customer 
