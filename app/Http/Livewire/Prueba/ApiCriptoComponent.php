@@ -10,6 +10,7 @@ class ApiCriptoComponent extends Component
 {
   
     public $search;
+   
     
     public function render()
     {
@@ -18,6 +19,7 @@ class ApiCriptoComponent extends Component
         $coins = $coinArray->json();
 
         return view('livewire.prueba.api-cripto-component',['coins' => $coins])->layout('layouts.base2');
+       
     }
 }
 

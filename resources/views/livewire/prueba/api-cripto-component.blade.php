@@ -39,7 +39,7 @@
     <section id="content" class="container">
 
         <div class="table-wrapper">
-            <table>
+            <table id="tabla">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -79,5 +79,7 @@
 </div>
 </div>
 @push('scripts')
-
+    <script>
+        tabla = document.getElementById('tabla')
+    </script>
 @endpush
