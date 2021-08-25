@@ -13,7 +13,7 @@
         }
 
         .bg-red {
-            color: red;
+            color: rgb(255, 5, 5);
         }
 
         table td img {
@@ -65,6 +65,7 @@
                             @endphp
                             <td data-title="Pocentage" class={{ $isActive ? 'bg-green' : 'bg-red' }}>
                                 {{ $coin['price_change_percentage_24h'] }}</td>
+
                             <td data-title="Volumen">{{ $coin['total_volume'] }}</td>
                         </tr>
                 </tbody>
