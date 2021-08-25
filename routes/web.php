@@ -43,9 +43,9 @@ use App\Http\Livewire\Prueba\ApiCriptoComponent;
    Route::get('/',HomeComponent::class)->name('index');
    
 
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+     return view('dashboard');
+ })->name('dashboard');
 
 
 //Uso general
