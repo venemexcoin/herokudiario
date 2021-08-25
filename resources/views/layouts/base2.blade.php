@@ -35,7 +35,7 @@
                         <ul>
                             <li><a href="/">Mi espacio</a></li>
                             <li><a href="{{ route('general.uno') }}">Right Sidebar</a></li>
-                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li><a href="{{ url('/user/profile') }}">Mi perfil</a></li>
                             <li>
                                 <a href="#">Submenu</a>
                                 <ul>
@@ -54,7 +54,7 @@
                                     <a href="#">Menu Administrador</a>
                                     <ul>
                                         <li><a href="{{ route('admin.completa') }}">Paginas completas</a></li>
-                                        <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                        <li><a href="{{ url('/user/profile') }}">Mi perfil</a></li>
                                         <li><a href="no-sidebar.html">No Sidebar</a></li>
                                         <li>
                                             <a href="#">Submenu</a>

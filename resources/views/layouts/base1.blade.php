@@ -53,7 +53,7 @@
                                     <a href="#">Menu Administrador</a>
                                     <ul>
                                         <li><a href="{{ route('admin.completa') }}">Paginas completas</a></li>
-                                        <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                        <li><a href="{{ url('/user/profile') }}">Miperfil</a></li>
                                         <li><a href="no-sidebar.html">No Sidebar</a></li>
                                         <li>
                                             <a href="#">Submenu</a>
@@ -86,7 +86,7 @@
                                     <a href="#">Menu Usuario</a>
                                     <ul>
                                         <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                                        <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                        <li><a href="{{ url('/user/profile') }}">Mi perfil</a></li>
                                         <li><a href="no-sidebar.html">No Sidebar</a></li>
                                         <li>
                                             <a href="#">Submenu</a>

@@ -34,7 +34,7 @@
                         <ul>
                             <li><a href="#veremos">Que veremos aquí</a></li>
                             <li><a href="{{ route('general.uno') }}">paginas Completas</a></li>
-                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li><a href="{{ url('/user/profile') }}">Mi perfil</a></li>
                             <li>
                                 <a href="#">Submenu</a>
                                 <ul>
@@ -54,7 +54,7 @@
                                     <ul>
                                         <li><a href="{{ route('admin.completa') }}">Paginas completas</a></li>
                                         <li><a href="{{ route('prueba.home') }}">Zona de pruebas</a></li>
-                                        <li><a href="no-sidebar.html">No Sidebar</a></li>
+                                        <li><a href="{{ url('/user/profile') }}">Mi perfil</a></li>
                                         <li>
                                             <a href="#">Submenu</a>
                                             <ul>
