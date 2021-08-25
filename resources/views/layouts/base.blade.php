@@ -69,7 +69,7 @@
                                 <li>
                                     <a href="#">Submenu</a>
                                     <ul>
-                                        <li><a title="My Account" href="#">My Account {{ secure_Auth::user()->name }}</a>
+                                        <li><a title="My Account" href="#">My Account {{ Auth::user()->name }}</a>
                                         </li>
                                         <li><a title="Dashboard" href="{{ route('admin.dashboard') }}">Dashboard</a></li>
                                         <li><a href="{{ 'logout' }}"
@@ -104,7 +104,7 @@
                                 <li>
                                     <a href="#">Submenu</a>
                                     <ul>
-                                        <li><a title="My Account" href="#">My Account {{ secure_Auth::user()->name }}</a>
+                                        <li><a title="My Account" href="#">My Account {{ Auth::user()->name }}</a>
                                         </li>
                                         <li><a title="Dashboard" href="{{ route('user.dashboard') }}">Dashboard</a></li>
                                         <li><a href="{{ 'logout' }}"
