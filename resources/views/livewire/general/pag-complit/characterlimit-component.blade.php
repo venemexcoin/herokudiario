@@ -30,6 +30,21 @@
             padding: 30px;
             border-radius: 6px;
             box-shadow: 0 5px 10px;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            0% {
+
+                top: -450px;
+            }
+
+
+            100% {
+
+                top: 0px;
+            }
         }
 
         .input-box textarea {
@@ -117,7 +132,6 @@
                 'error'
             ); //if valLength is greater than 100 than add error classList if not than remove error classList   
 
-            console.log(valLength);
         });
     </script>
 @endpush
