@@ -11,6 +11,7 @@ use App\Http\Livewire\General\PagComplit\ParallaxComponent;
 use App\Http\Livewire\General\PagComplit\CardHoverComponent;
 
 
+
 use App\Http\Livewire\User\UserDashboardComponent;
 
 use App\Http\Livewire\Admin\AdminDashboardComponent;
@@ -20,6 +21,7 @@ use App\Http\Livewire\Admin\AdminEditCompletaComponent;
 
 use App\Http\Livewire\Prueba\HomePruebaComponent;
 use App\Http\Livewire\Prueba\BarraProgresoComponent;
+use App\Http\Livewire\Prueba\ApiCriptoComponent;
 
 
 
@@ -52,6 +54,7 @@ Route::get('/general/slitvideo',SlitVideoComponent::class)->name('general.slitvi
 Route::get('/general/scrollmagic',ScrollmagicComponent::class)->name('general.scrollmagic');
 Route::get('/general/parallax', ParallaxComponent::class)->name('general.parallax');
 Route::get('/general/cardhover', CardHoverComponent::class)->name('general.cardhover');
+Route::get('/prueba/apicripto', ApiCriptoComponent::class)->name('prueba.apicripto');
 
 
 // For User or Customer 

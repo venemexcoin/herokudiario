@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/developer-1.ico') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
+
     <noscript>
         <link rel="stylesheet" href="{{ asset('assets/css/noscript.css') }}" />
     </noscript>
@@ -124,7 +125,15 @@
                 </nav>
             </header>
 
+
+
             {{ $slot }}
+
+
+        </div>
+
+
+
 
 
         </div>

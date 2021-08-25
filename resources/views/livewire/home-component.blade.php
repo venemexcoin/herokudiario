@@ -27,15 +27,14 @@
                     que he realice durante mi aprendizaje,<br />
                     Gracias por tu visita.</p>
             </header>
-            <span class="image"><img src="{{ secure_asset('assets/images/img2.jpg') }}"
-                    alt="Mi Foto de Perfil" /></span>
+            <span class="image"><img src="{{ asset('assets/images/img2.jpg') }}" alt="Mi Foto de Perfil" /></span>
         </div>
         <a href="#one" class="goto-next scrolly">Next</a>
     </section>
 
     <!-- One -->
     <section id="one" class="spotlight style1 bottom">
-        <span class="image fit main"><img src="{{ secure_asset('assets/images/pic04.jpg') }}"
+        <span class="image fit main"><img src="{{ asset('assets/images/pic04.jpg') }}"
                 alt="Imagen HTML CSS Js" /></span>
         <div class="content">
             <div class="container">
@@ -71,8 +70,7 @@
 
     <!-- Two -->
     <section id="two" class="spotlight style2 right">
-        <span class="image fit main"><img src="{{ secure_asset('assets/images/pic05.jpg') }}"
-                alt="Imagen escritorio" />
+        <span class="image fit main"><img src="{{ asset('assets/images/pic05.jpg') }}" alt="Imagen escritorio" />
 
         </span>
 
@@ -95,7 +93,7 @@
 
     <!-- Three -->
     <section id="three" class="spotlight style3 left">
-        <span class="image fit main bottom"><img src="{{ secure_asset('assets/images/pic07.png') }}"
+        <span class="image fit main bottom"><img src="{{ asset('assets/images/pic07.png') }}"
                 alt="Imagen de grupo" /></span>
         <div class="content">
             <header>
