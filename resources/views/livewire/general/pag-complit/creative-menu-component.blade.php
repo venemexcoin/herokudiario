@@ -80,7 +80,7 @@
 <div>
     <section>
         <ul>
-            <li><a href="#" data-text="Home">Home</a></li>
+            <li><a href="/" data-text="Home">Home</a></li>
             <li><a href="#" data-text="About">About</a></li>
             <li><a href="#" data-text="Services">Services</a></li>
             <li><a href="#" data-text="Team">Team</a></li>
