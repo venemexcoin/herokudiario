@@ -15,15 +15,15 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/dVgqFj1c/417x498-black-text.png">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="{{ asset('assets/templatePrueba/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('assets/templatePrueba/css/bootstrap.min.css') }}" />
     <!-- style css -->
-    <link rel="stylesheet" href="{{ asset('assets/templatePrueba/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('assets/templatePrueba/css/style.css') }}" />
     <!-- Responsive-->
-    <link rel="stylesheet" href="{{ asset('assets/templatePrueba/css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('assets/templatePrueba/css/responsive.css') }}" />
     <!-- fevicon -->
-    <link rel="icon" href="{{  asset('assets/images/developer-1.ico') }}" type="image/gif" />
+    <link rel="icon" href="{{ asset('assets/images/developer-1.ico') }}" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="{{  asset('assets/templatePrueba/css/jquery.mCustomScrollbar.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/templatePrueba/css/jquery.mCustomScrollbar.min.css') }}" />
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
@@ -41,7 +41,8 @@
 <body class="main-layout">
     <!-- loader  -->
     <div class="loader_bg">
-        <div class="loader"><img src="{{  asset('assets/templatePrueba/images/loading.gif') }}" alt="#" /></div>
+        <div class="loader"><img src="{{ asset('assets/templatePrueba/images/loading.gif') }}" alt="#" />
+        </div>
     </div>
     <!-- end loader -->
     <!-- header -->
@@ -55,7 +56,7 @@
                             <div class="center-desk">
                                 <div class="logo">
                                     <a href="/"><img
-                                            src="{{ asset('assets/templatePrueba/images/Logo-invertido2.png') }}"
+                                            src="{{ secure_asset('assets/templatePrueba/images/Logo-invertido2.png') }}"
                                             alt="#" /></a>
                                 </div>
                             </div>
@@ -110,7 +111,7 @@
                 </div>
                 <div class="col-md-7">
                     <div class="text-img">
-                        <figure><img src="{{ asset('assets/templatePrueba/images/img.png') }}" /></figure>
+                        <figure><img src="{{ secure_asset('assets/templatePrueba/images/img.png') }}" /></figure>
                     </div>
                 </div>
             </div>
@@ -130,7 +131,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="web_hosting">
-                        <figure><img src="{{ asset('assets/templatePrueba/images/web.jpg') }}" alt="#" />
+                        <figure><img src="{{ secure_asset('assets/templatePrueba/images/web.jpg') }}" alt="#" />
                         </figure>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -149,14 +150,14 @@
 
 
     <!-- Javascript files-->
-    <script src="{{ asset('assets/templatePrueba/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/templatePrueba/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/templatePrueba/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/templatePrueba/js/jquery-3.0.0.min.js') }}"></script>
-    <script src="{{ asset('assets/templatePrueba/js/plugin.js') }}"></script>
+    <script src="{{ secure_asset('assets/templatePrueba/js/jquery.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/templatePrueba/js/popper.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/templatePrueba/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/templatePrueba/js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/templatePrueba/js/plugin.js') }}"></script>
     <!-- sidebar -->
-    <script src="{{ asset('assets/templatePrueba/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script src="{{ asset('assets/templatePrueba/js/custom.js') }}"></script>
+    <script src="{{ secure_asset('assets/templatePrueba/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/templatePrueba/js/custom.js') }}"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     @stack('styles')
 </body>

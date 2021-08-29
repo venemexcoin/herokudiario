@@ -31,3 +31,6 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />) \*por si despues me pierdo
 -   use simplepage y modifique los balores en Glassmorphism
+-   Implementacion de metodos de pago con mecado pago
+
+1. ir a config luedo servicxes.php
