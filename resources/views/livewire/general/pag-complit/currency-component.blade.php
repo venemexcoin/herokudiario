@@ -155,7 +155,7 @@
     </div>
 </div>
 @push('scripts')
-    <script src="{{ secure_asset('assets/js/country-list.js') }}"></script>
+    <script src="{{ asset('assets/js/country-list.js') }}"></script>
     <script>
         const dropList = document.querySelectorAll(".drop-list select"),
             fromCurrency = document.querySelector(".from select"),
