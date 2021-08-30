@@ -12,6 +12,7 @@ use App\Http\Livewire\General\PagComplit\CardHoverComponent;
 use App\Http\Livewire\General\PagComplit\CharacterlimitComponent;
 use App\Http\Livewire\General\PagComplit\CreativeMenuComponent;
 use App\Http\Livewire\General\PagComplit\CurrencyComponent;
+use App\Http\Livewire\General\PagComplit\CreateTabComponent;
 
 
 
@@ -61,6 +62,7 @@ Route::get('/prueba/apicripto', ApiCriptoComponent::class)->name('prueba.apicrip
 Route::get('/general/character',CharacterlimitComponent::class)->name('general.character');
 Route::get('/general/creativemenu',CreativeMenuComponent::class)->name('general.creativemenu');
 Route::get('/general/currency', CurrencyComponent::class)->name('general.currency');
+Route::get('/general/createtab', CreateTabComponent::class)->name('general.createtab');
 
 
 // For User or Customer 
