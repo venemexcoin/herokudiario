@@ -11,6 +11,7 @@ use App\Http\Livewire\General\PagComplit\ParallaxComponent;
 use App\Http\Livewire\General\PagComplit\CardHoverComponent;
 use App\Http\Livewire\General\PagComplit\CharacterlimitComponent;
 use App\Http\Livewire\General\PagComplit\CreativeMenuComponent;
+use App\Http\Livewire\General\PagComplit\CurrencyComponent;
 
 
 
@@ -59,6 +60,7 @@ Route::get('/general/cardhover', CardHoverComponent::class)->name('general.cardh
 Route::get('/prueba/apicripto', ApiCriptoComponent::class)->name('prueba.apicripto');
 Route::get('/general/character',CharacterlimitComponent::class)->name('general.character');
 Route::get('/general/creativemenu',CreativeMenuComponent::class)->name('general.creativemenu');
+Route::get('/general/currency', CurrencyComponent::class)->name('general.currency');
 
 
 // For User or Customer 

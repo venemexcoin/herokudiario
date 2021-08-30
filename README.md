@@ -34,3 +34,7 @@
 -   Implementacion de metodos de pago con mecado pago
 
 1. ir a config luedo servicxes.php
+
+## Campos
+
+1. general/PagComplit/PruevaComponent
