@@ -35,6 +35,10 @@
 
 1. ir a config luedo servicxes.php
 
+## Pacticas
+
+-   El la practica de Facebook App uasamos una libreria extena dede esta direccion(https://ionic.io/ionicons/usage)[iconos direferentes]
+
 ## Campos
 
 1. general/PagComplit/PruevaComponent

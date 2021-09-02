@@ -13,6 +13,7 @@ use App\Http\Livewire\General\PagComplit\CharacterlimitComponent;
 use App\Http\Livewire\General\PagComplit\CreativeMenuComponent;
 use App\Http\Livewire\General\PagComplit\CurrencyComponent;
 use App\Http\Livewire\General\PagComplit\CreateTabComponent;
+use App\Http\Livewire\General\PagComplit\FacebookAppComponent;
 
 
 
@@ -63,6 +64,7 @@ Route::get('/general/character',CharacterlimitComponent::class)->name('general.c
 Route::get('/general/creativemenu',CreativeMenuComponent::class)->name('general.creativemenu');
 Route::get('/general/currency', CurrencyComponent::class)->name('general.currency');
 Route::get('/general/createtab', CreateTabComponent::class)->name('general.createtab');
+Route::get('/general/facebooapp', FacebookAppComponent::class)->name('general.facebookapp');
 
 
 // For User or Customer 
