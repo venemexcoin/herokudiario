@@ -15,7 +15,7 @@
     <meta name="ChamocellDeveloper" content="Compartiendo mi espacio de trabajo, En esta área encontraras alguno
      de los ejercicios que he realizado durante mi aprendizaje, Gracias por tu visita">
     <meta name="robots" content="index,follow">
-    <meta name="googlebot-news" content="index" />
+    <meta name="googlebot-news" content="index.follow" />
     <link rel="stylesheet" href="{{ secure_asset('assets/css/main.css') }}" />
     <noscript>
         <link rel="stylesheet" href="{{ secure_asset('assets/css/noscript.css') }}" />

@@ -46,5 +46,7 @@
 ## SEO
 
 -   colocasion de meta etiquetas para los buscadores
-    [<meta name="Zona de pruebas" content="Heroku Enterprise facilita la creación de aplicaciones completas y
-    atractivas que se adecuen a la exigencia del cliente y, al mismo tiempo">]
+    [<meta name="ChamocellDeveloper" content="Compartiendo mi espacio de trabajo, En esta área encontraras alguno
+     de los ejercicios que he realizado durante mi aprendizaje, Gracias por tu visita">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot-news" content="index.follow" />]
