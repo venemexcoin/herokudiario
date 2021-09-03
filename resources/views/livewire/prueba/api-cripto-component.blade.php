@@ -39,7 +39,7 @@
     <section id="content" class="container">
 
         <div class="table-wrapper">
-            <table id="tabla">
+            <table>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -80,6 +80,14 @@
 </div>
 @push('scripts')
     <script>
-        tabla = document.getElementById('tabla')
+        window.onload = function reseterApi() {
+            setInterval("recargar()", 50000);
+            console.log('ejecutandose')
+        }
+
+        function recargar() {
+            location.reload();
+            console.log('recargando')
+        }
     </script>
 @endpush

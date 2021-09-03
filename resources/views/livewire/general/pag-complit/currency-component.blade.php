@@ -162,6 +162,8 @@
             toCurrency = document.querySelector(".to select"),
             getButton = document.querySelector("form button");
 
+
+
         for (let i = 0; i < dropList.length; i++) {
             for (currency_code in country_code) {
                 let selected;

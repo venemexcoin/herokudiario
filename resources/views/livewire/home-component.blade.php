@@ -24,10 +24,11 @@
             <header>
                 <h2>Compartiendo mi espacio</h2>
                 <p>En esta área encontraras alguno de los ejercicios<br />
-                    que he realice durante mi aprendizaje,<br />
+                    que he realizado durante mi aprendizaje,<br />
                     Gracias por tu visita.</p>
             </header>
-            <span class="image"><img src="{{ asset('assets/images/img2.jpg') }}" alt="Mi Foto de Perfil" /></span>
+            <span class="image"><img src="{{ asset('assets/images/img2.jpg') }}"
+                    alt="Mi Foto de Perfil" /></span>
         </div>
         <a href="#one" class="goto-next scrolly">Next</a>
     </section>
