@@ -16,9 +16,9 @@
      de los ejercicios que he realizado durante mi aprendizaje, Gracias por tu visita">
     <meta name="robots" content="index,follow">
     <meta name="googlebot-news" content="index.follow" />
-    <link rel="stylesheet" href="{{ secure_asset('assets/css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
     <noscript>
-        <link rel="stylesheet" href="{{ secure_asset('assets/css/noscript.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/css/noscript.css') }}" />
     </noscript>
     @stack('styles')
     @livewireStyles
@@ -158,14 +158,14 @@
         </div>
 
         <!-- Scripts -->
-        <script src="{{ secure_asset('assets/js/jquery.min.js') }}"></script>
-        <script src="{{ secure_asset('assets/js/jquery.scrolly.min.js') }}"></script>
-        <script src="{{ secure_asset('assets/js/jquery.dropotron.min.js') }}"></script>
-        <script src="{{ secure_asset('assets/js/jquery.scrollex.min.js') }}"></script>
-        <script src="{{ secure_asset('assets/js/browser.min.js') }}"></script>
-        <script src="{{ secure_asset('assets/js/breakpoints.min.js') }}"></script>
-        <script src="{{ secure_asset('assets/js/util.js') }}"></script>
-        <script src="{{ secure_asset('assets/js/main.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.dropotron.min.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.scrollex.min.js') }}"></script>
+        <script src="{{ asset('assets/js/browser.min.js') }}"></script>
+        <script src="{{ asset('assets/js/breakpoints.min.js') }}"></script>
+        <script src="{{ asset('assets/js/util.js') }}"></script>
+        <script src="{{ asset('assets/js/main.js') }}"></script>
         <script src="https://kit.fontawesome.com/3226d1ef96.js" crossorigin="anonymous"></script>
         @stack('scripts')
         @livewireScripts
