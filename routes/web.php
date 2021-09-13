@@ -14,6 +14,7 @@ use App\Http\Livewire\General\PagComplit\CreativeMenuComponent;
 use App\Http\Livewire\General\PagComplit\CurrencyComponent;
 use App\Http\Livewire\General\PagComplit\CreateTabComponent;
 use App\Http\Livewire\General\PagComplit\FacebookAppComponent;
+use App\Http\Livewire\General\PagComplit\DynamicClockComponent;
 
 
 
@@ -46,7 +47,7 @@ use App\Http\Livewire\Prueba\ApiCriptoComponent;
 // });
 
    Route::get('/',HomeComponent::class)->name('index');
-   
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
      return view('dashboard');
@@ -65,9 +66,10 @@ Route::get('/general/creativemenu',CreativeMenuComponent::class)->name('general.
 Route::get('/general/currency', CurrencyComponent::class)->name('general.currency');
 Route::get('/general/createtab', CreateTabComponent::class)->name('general.createtab');
 Route::get('/general/facebooapp', FacebookAppComponent::class)->name('general.facebookapp');
+Route::get('/general/dynamicclock', DynamicClockComponent::class)->name('general.dynamicclock');
 
 
-// For User or Customer 
+// For User or Customer
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/user/dashboard',UserDashboardComponent::class)->name('user.dashboard');
