@@ -15,6 +15,7 @@ use App\Http\Livewire\General\PagComplit\CurrencyComponent;
 use App\Http\Livewire\General\PagComplit\CreateTabComponent;
 use App\Http\Livewire\General\PagComplit\FacebookAppComponent;
 use App\Http\Livewire\General\PagComplit\DynamicClockComponent;
+use App\Http\Livewire\General\PagComplit\GlossmorphismComponent;
 
 
 
@@ -67,6 +68,7 @@ Route::get('/general/currency', CurrencyComponent::class)->name('general.currenc
 Route::get('/general/createtab', CreateTabComponent::class)->name('general.createtab');
 Route::get('/general/facebooapp', FacebookAppComponent::class)->name('general.facebookapp');
 Route::get('/general/dynamicclock', DynamicClockComponent::class)->name('general.dynamicclock');
+Route::get('/general/glossmorphism', GlossmorphismComponent::class)->name('general.glossmorphism');
 
 
 // For User or Customer
