@@ -16,6 +16,7 @@ use App\Http\Livewire\General\PagComplit\CreateTabComponent;
 use App\Http\Livewire\General\PagComplit\FacebookAppComponent;
 use App\Http\Livewire\General\PagComplit\DynamicClockComponent;
 use App\Http\Livewire\General\PagComplit\GlossmorphismComponent;
+use App\Http\Livewire\General\PagComplit\GridFlexComponent;
 
 
 
@@ -69,6 +70,7 @@ Route::get('/general/createtab', CreateTabComponent::class)->name('general.creat
 Route::get('/general/facebooapp', FacebookAppComponent::class)->name('general.facebookapp');
 Route::get('/general/dynamicclock', DynamicClockComponent::class)->name('general.dynamicclock');
 Route::get('/general/glossmorphism', GlossmorphismComponent::class)->name('general.glossmorphism');
+Route::get('/general/gridflex', GridFlexComponent::class)->name('general.gridflex');
 
 
 // For User or Customer
