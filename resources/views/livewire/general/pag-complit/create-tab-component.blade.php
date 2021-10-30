@@ -25,7 +25,7 @@
             color: #fff;
         }
 
-        .container {
+        .container3 {
             max-width: 950px;
             width: 100%;
             padding: 40px 50px 40px 40px;
@@ -35,7 +35,7 @@
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .container .topic {
+        .container3 .topic {
             font-size: 30px;
             font-weight: 500;
             margin-bottom: 20px;
@@ -154,7 +154,7 @@
 
     </style>
 @endpush
-<div class="container">
+<div class="container3">
     <div class="topic">CSS Vertical Tabs.</div>
     <div class="content">
         <input type="radio" name="slider" checked id="home">

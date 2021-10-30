@@ -17,6 +17,8 @@ use App\Http\Livewire\General\PagComplit\FacebookAppComponent;
 use App\Http\Livewire\General\PagComplit\DynamicClockComponent;
 use App\Http\Livewire\General\PagComplit\GlossmorphismComponent;
 use App\Http\Livewire\General\PagComplit\GridFlexComponent;
+use App\Http\Livewire\General\PagComplit\SpeechConverterComponent;
+use App\Http\Livewire\General\PagComplit\RippedPaperComponent;
 
 
 
@@ -71,7 +73,8 @@ Route::get('/general/facebooapp', FacebookAppComponent::class)->name('general.fa
 Route::get('/general/dynamicclock', DynamicClockComponent::class)->name('general.dynamicclock');
 Route::get('/general/glossmorphism', GlossmorphismComponent::class)->name('general.glossmorphism');
 Route::get('/general/gridflex', GridFlexComponent::class)->name('general.gridflex');
-
+Route::get('/general/speerch/converter', SpeechConverterComponent::class)->name('general.speerchconverter');
+Route::get('/general/rippedpaper', RippedPaperComponent::class)->name('general.rippedpaper');
 
 // For User or Customer
 

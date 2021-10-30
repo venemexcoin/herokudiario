@@ -30,7 +30,7 @@
             filter: invert(100%);
         }
 
-        section .container {
+        section .container4 {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -43,7 +43,7 @@
             position: relative;
         }
 
-        section .container .icons i {
+        section .container4 .icons i {
             position: absolute;
             right: 17px;
             top: 17px;
@@ -60,23 +60,23 @@
 
 
 
-        .container .icons i.fa-sun {
+        .container4 .icons i.fa-sun {
             opacity: 0;
             pointer-events: none;
         }
 
-        section.dark .container .icons i.fa-sun {
+        section.dark .container4 .icons i.fa-sun {
             opacity: 1;
             pointer-events: auto;
             font-size: 16px;
         }
 
-        section .container .time {
+        section .container4 .time {
             display: flex;
             align-items: center;
         }
 
-        .container .time .time-colon {
+        .container4 .time .time-colon {
             display: flex;
             align-items: center;
             position: relative;
@@ -133,7 +133,7 @@
 @endpush
 <div>
     <section>
-        <div class="container">
+        <div class="container4">
             <div class="icons">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>

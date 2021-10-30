@@ -1,18 +1,12 @@
 <div>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
         body {
             background: #1D202B;
             color: #fff;
             font-family: 'Roboto', sans-serif;
         }
 
-        .contenedor {
+        .contenedor1 {
             width: 90%;
             max-width: 1200px;
             margin: auto;
@@ -36,7 +30,7 @@
             gap: 20px;
         }
 
-        .card {
+        .card1 {
             border-radius: 10px;
             min-height: 200px;
             font-weight: bold;
@@ -50,7 +44,7 @@
 
         }
 
-        .card .textos {
+        .card1 .textos {
             height: 100%;
 
             display: flex;
@@ -113,40 +107,40 @@
     <div class="titulo">
         <h1>FlexBox</h1>
     </div>
-    <div class="contenedor">
+    <div class="contenedor1">
         <div class="contenedor-conciertos">
-            <div class="card" style="background-image: url('https://i.postimg.cc/P5fV1xwV/1.jpg')">
+            <div class="card1" style="background-image: url('https://i.postimg.cc/P5fV1xwV/1.jpg')">
                 <div class="textos">
                     <h3>Rock In Rio</h3>
                     <p>27 de Octubre 2021</p>
                 </div>
             </div>
-            <div class="card" style="background-image: url('https://i.postimg.cc/DZGx7490/2.jpg')">
+            <div class="card1" style="background-image: url('https://i.postimg.cc/DZGx7490/2.jpg')">
                 <div class="textos">
                     <h3>FalconMasters’ Concert</h3>
                     <p>12 de Noviembre 2021</p>
                 </div>
             </div>
-            <div class="card" style="background-image: url('https://i.postimg.cc/yxzvxYKP/3.jpg')">
+            <div class="card1" style="background-image: url('https://i.postimg.cc/yxzvxYKP/3.jpg')">
                 <div class="textos">
                     <h3>Coachella</h3>
                     <p>13 de Diciembre 2021</p>
                 </div>
             </div>
 
-            <div class="card" style="background-image: url('https://i.postimg.cc/GmM7KCPL/4.jpg')">
+            <div class="card1" style="background-image: url('https://i.postimg.cc/GmM7KCPL/4.jpg')">
                 <div class="textos">
                     <h3>US Festival</h3>
                     <p>20 de Diciembre 2021</p>
                 </div>
             </div>
-            <div class="card" style="background-image: url('https://i.postimg.cc/9frxNn1G/5.jpg')">
+            <div class="card1" style="background-image: url('https://i.postimg.cc/9frxNn1G/5.jpg')">
                 <div class="textos">
                     <h3>Altamont Speedway</h3>
                     <p>27 de Diciembre 2021</p>
                 </div>
             </div>
-            <div class="card" style="background-image: url('https://i.postimg.cc/Pq96GQF0/6.jpg')">
+            <div class="card1" style="background-image: url('https://i.postimg.cc/Pq96GQF0/6.jpg')">
                 <div class="textos">
                     <h3>Rock In Rio Again</h3>
                     <p>1 de Enero 2021</p>

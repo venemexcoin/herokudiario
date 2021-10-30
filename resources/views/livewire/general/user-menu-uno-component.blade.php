@@ -52,7 +52,7 @@
             font-weight: bold;
         }
 
-        .container {
+        .container1 {
             position: relative;
             width: 900px;
             display: grid;
@@ -62,19 +62,19 @@
             margin-bottom: 60px;
         }
 
-        .container .card {
+        .container1 .card {
             width: 100%;
             background: #fff;
         }
 
-        .container .card .imgBx {
+        .container1 .card .imgBx {
             position: relative;
             width: 100%;
             height: 310px;
             overflow: hidden;
         }
 
-        .container .card .imgBx img {
+        .container1 .card .imgBx img {
             position: absolute;
             top: 0;
             left: 0;
@@ -85,7 +85,7 @@
             transform-origin: right;
         }
 
-        .container .card:hover .imgBx img {
+        .container1 .card:hover .imgBx img {
             transform: scale(1.5)
         }
 
@@ -118,7 +118,7 @@
             transition-delay: 0.3s;
         }
 
-        .container .card:hover .action li {
+        .container1 .card:hover .action li {
             transform: translateX(0px);
         }
 
@@ -160,39 +160,39 @@
             transform: translateY(-50%) rotate(45deg);
         }
 
-        .container .card .content {
+        .container1 .card .content {
             padding: 10px;
         }
 
-        .container .card .content .productName a {
+        .container1 .card .content .productName a {
             text-decoration: none;
         }
 
-        .container .card .content .productName h3 {
+        .container1 .card .content .productName h3 {
             font-size: 18px;
             font-weight: 500;
             color: #333;
             margin: 5px 0
         }
 
-        .container .card .content .price_reting {
+        .container1 .card .content .price_reting {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .container .card .content .price_reting h2 {
+        .container1 .card .content .price_reting h2 {
             font-size: 20px;
             color: #ff2020;
             font-weight: 500;
         }
 
-        .container .card .content .price_reting .fas {
+        .container1 .card .content .price_reting .fas {
             color: #ffd513;
             cursor: pointer;
         }
 
-        .container .card .content .price_reting .fas.grey {
+        .container1 .card .content .price_reting .fas.grey {
             color: #ccc;
             margin-left: 5px;
             cursor: pointer;
@@ -225,7 +225,7 @@
         <h3>Algunas de estas pruebas no son responsive o adaptables para Móvil</h3>
     </div>
 
-    <div class="container">
+    <div class="container1">
         @foreach ($completas as $completa)
             <div class="card">
                 <div class="imgBx">
