@@ -19,6 +19,7 @@ use App\Http\Livewire\General\PagComplit\GlossmorphismComponent;
 use App\Http\Livewire\General\PagComplit\GridFlexComponent;
 use App\Http\Livewire\General\PagComplit\SpeechConverterComponent;
 use App\Http\Livewire\General\PagComplit\RippedPaperComponent;
+use App\Http\Livewire\General\PagComplit\KeyboardComponent;
 
 
 
@@ -75,6 +76,7 @@ Route::get('/general/glossmorphism', GlossmorphismComponent::class)->name('gener
 Route::get('/general/gridflex', GridFlexComponent::class)->name('general.gridflex');
 Route::get('/general/speerch/converter', SpeechConverterComponent::class)->name('general.speerchconverter');
 Route::get('/general/rippedpaper', RippedPaperComponent::class)->name('general.rippedpaper');
+Route::get('/general/KeyboardComponent', KeyboardComponent::class)->name('general.KeyboardComponent');
 
 // For User or Customer
 
